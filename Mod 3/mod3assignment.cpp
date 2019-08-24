@@ -24,17 +24,17 @@ int main(){ //instatiate all the variables needed
         total = total + subtotal[i];
     }
 
-    cout << "Item Cost" << setw(18) << "Item Tax" << setw(18) << "Item Subtotal" << endl;
-    cout << "----------------------------------------------" << endl;
+    cout << "Item Cost" << "\t\t" << "Item Tax" << "\t\t" << "Item Subtotal" << endl;
+    cout << "--------------------------------------------------------------" << endl;
 
     //the loop that outputs the item information
     for(int i = 0; i < 5; i++){
-        cout << setprecision(2) << fixed;
+        //cout << setprecision(2) << fixed;
         
-        cout << items[i] << setw(20) << items[i]*tax << setw(20) << subtotal[i] << endl;
+        cout << items[i] << "\t\t\t" << items[i]*tax << "\t\t\t" << subtotal[i] << endl;
     }
 
-    cout << "----------------------------------------------" << endl;
-    cout << "Items Total" << setw(18) << "Tax Total" << setw(18) << "Total Due" << endl;
-    cout << itemTotal << setw(20) << taxTotal << setw(20) << total;
+    cout << "--------------------------------------------------------------" << endl;
+    cout << "Items Total" << "\t\t" << "Tax Total" << "\t\t" << "Total Due" << endl;
+    cout << itemTotal << "\t\t\t" << taxTotal << "\t\t\t" << total;
 }
